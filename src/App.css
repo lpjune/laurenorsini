@@ -95,7 +95,7 @@
 .banner-text {
   background-color: black;
   opacity: 0.8;
-  width: 75%;
+  width: 70%;
   margin: auto;
   border-radius: 10px;
 }
@@ -111,11 +111,29 @@
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .banner-text {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    border-radius: 10px;
+  }
+}
+
 .banner-text h1 {
   font-size: 66px;
   font-weight: bold;
   color: white;
 }
+
+@media only screen and (max-width: 320px) {
+  .banner-text h1 {
+    font-size: 54px;
+  }
+}
+
 
 .banner-text hr {
   border-top: 5px dotted white;
@@ -127,6 +145,12 @@
   color: white;
   font-size: 20px;
   padding: 1em;
+}
+
+@media only screen and (max-width: 320px) {
+  .banner-text p {
+    font-size: 18px;
+  }
 }
 
 .social-links {
