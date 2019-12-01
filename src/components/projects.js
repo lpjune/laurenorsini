@@ -15,14 +15,13 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/enterprise-blockchain.png) center / cover'}} >Blockchain Transaction Manager</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              A management dashboard to store transaction records in a blockchain using MongoDB, Express, PUG, etc.
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored href="https://github.com/lpjune/BlockTransaction" target="_blank">GitHub</Button>
+              <Button colored href="https://blocktransaction.herokuapp.com/catalog" target="_blank">Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -31,35 +30,19 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/store.jpg) center / cover'}} >eCommerce Store</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              An eCommerce web store using MongoDB, Express, Mongoose, and PUG
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+            <Button colored href="https://github.com/lpjune/eCommerce" target="_blank">GitHub</Button>
+            <Button colored href="https://dcsp.herokuapp.com/" target="_blank">Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
             </CardMenu>
           </Card>
 
-          {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
         </div>
 
 
@@ -69,7 +52,7 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/NEST.jpg) no-repeat center / contain'}}></CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/NEST.jpg) no-repeat center / contain'}}>NEST</CardTitle>
             <CardText>
               An Android app written in Kotlin for the control of NEST drone housing. App acts as a client to send and receive messages from NEST server, and stream live camera feeds. 
             </CardText>
@@ -82,18 +65,28 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/woof.png) center / cover'}} >woofState</CardTitle>
+            <CardText>
+              An Android app to connect those short on time with animal shelters in need of help for quick volunteering via dog walking. Winner of HackGSU 2019.
+            </CardText>
+            <CardActions border>
+              <Button colored href="https://github.com/lpjune/woofState" target="_blank">GitHub</Button>
+              <Button colored href="https://devpost.com/software/hackgsu19" target="_blank">Devpost</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
           </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is VueJS</h1></div>
+        <div><h1>This is a miscellaneous section</h1></div>
       )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
-    }
-
+    } 
   }
 
 
@@ -102,10 +95,9 @@ class Projects extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
+          <Tab>Web</Tab>
           <Tab>Android</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Misc</Tab>
         </Tabs>
 
 
