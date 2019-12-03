@@ -34,11 +34,14 @@ class Resume extends Component {
             <a
               href="https://www.linkedin.com/in/laurenporsini/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn.com/in/laurenporsini
             </a>
             <h5>GitHub</h5>
-            <a href="https://www.github.com/lpjune" target="_blank">
+            <a href="https://www.github.com/lpjune" 
+            target="_blank"
+            rel="noopener noreferrer">
               GitHub.com/lpjune
             </a>
             <h5>Web</h5>
