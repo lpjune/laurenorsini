@@ -14,7 +14,7 @@ class Projects extends Component {
       return(
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card className="project-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/enterprise-blockchain.png) center / cover'}} >Blockchain Transaction Manager</CardTitle>
             <CardText>
               A management dashboard to store transaction records in a blockchain using MongoDB, Express, PUG, etc.
@@ -29,7 +29,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card className="project-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/store.jpg) center / cover'}} >eCommerce Store</CardTitle>
             <CardText>
               An eCommerce web store using MongoDB, Express, Mongoose, and PUG
@@ -51,8 +51,8 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/NEST.jpg) no-repeat center / contain'}}>NEST</CardTitle>
+          <Card className="project-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/NEST.jpg) no-repeat center / contain'}}></CardTitle>
             <CardText>
               An Android app written in Kotlin for the control of NEST drone housing. App acts as a client to send and receive messages from NEST server, and stream live camera feeds. 
             </CardText>
@@ -67,7 +67,7 @@ class Projects extends Component {
           </Card>
 
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card className="project-card" shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(/images/woof.png) center / cover'}} >woofState</CardTitle>
             <CardText>
               An Android app to connect those short on time with animal shelters in need of help for quick volunteering via dog walking. Winner of HackGSU 2019.

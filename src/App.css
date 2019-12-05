@@ -33,8 +33,75 @@
   height: 100%;
 }
 
+/* projects */
+
 .projects-grid {
   display: flex;
+  flex: 1;
+}
+
+.mdl-card__title-text {
+  flex-wrap: wrap;
+  overflow: visible;
+  font-size: 24px !important;
+}
+
+@media only screen and (max-width: 768px) {
+.mdl-card__title-text {
+  flex-wrap: wrap;
+  overflow: visible;
+  font-size: 25px !important;
+}}
+
+@media only screen and (max-width: 375px) {
+  .mdl-card__title-text {
+    flex-wrap: wrap;
+    overflow: visible;
+    font-size: 20px !important;
+  }}
+
+@media only screen and (max-width: 320px) {
+  .mdl-card__title-text {
+    flex-wrap: wrap;
+    overflow: visible;
+    font-size: 15px !important;
+  }}
+
+@media only screen and (max-width: 425px) {
+  .project-card{
+    padding: 8px !important;
+    height: 400px;
+    width: 200px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .project-card{
+    padding: 8px !important;
+    height: 400px;
+    width: 200px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .project-card{
+    padding: 8px !important;
+    height: 400px;
+    width: 200px;
+    margin: 5px;
+  }
+}
+
+.mdl-card__supporting-text {
+  overflow: visible;
+}
+
+@media only screen and (max-width: 320px) {
+  .mdl-card__supporting-text {
+    padding: 8px !important;
+  }
 }
 
 /* Resume Page css */
@@ -92,15 +159,21 @@
   padding-top: 5em;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1280px) {
   .avatar-img {
-    height: 200px
+    height: 200px;
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .avatar-img {
-    height: 150px
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .avatar-img {
+    height: 150px;
   }
 }
 
@@ -133,7 +206,18 @@
   }
 }
 
-
+@media only screen and (max-width: 375px) {
+  .banner-text {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: fit-content;
+    border-radius: 10px;
+  }
+}
 
 @media only screen and (max-width: 320px) {
   .banner-text {
@@ -141,6 +225,8 @@
     opacity: 0.8;
     width: 100%;
     margin: auto;
+    padding-right: 5px;
+    padding-left: 5px;
     height: fit-content;
     border-radius: 10px;
   }
@@ -152,12 +238,32 @@
   color: white;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1280px) {
+  .banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-text h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .banner-text h1 {
     font-size: 40px;
   }
 }
 
+@media only screen and (max-width: 578px) {
+  .banner-text h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   .banner-text h1 {
@@ -178,9 +284,11 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .banner-text hr {
-    font-size: 15px;
+@media only screen and (max-width: 1280px) {
+  .banner-text h3 {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -196,6 +304,13 @@
   color: white;
   font-size: 20px;
   padding: 1em;
+}
+
+@media only screen and (max-width: 1280px) {
+  .banner-text p {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -233,6 +348,22 @@
   height: fit-content;
 }
 
+@media only screen and (max-width: 1280px) {
+  .social-links i {
+    font-size: 4em;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .social-links i {
+    font-size: 3.5em;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .social-links i {
     color: white;
@@ -256,5 +387,5 @@
 }
 
 .mdl-layout__drawer-button {
-  color:white !important;
+  color: white !important;
 }
