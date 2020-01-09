@@ -32,6 +32,15 @@ class Contact extends Component {
                     LaurenPOrsini@gmail.com
                   </ListItemContent>
                 </ListItem>
+
+                <ListItem>
+                  <ListItemContent
+                    style={{ fontSize: "30px", fontFamily: "Anton", wordBreak: "break-word" }}
+                  >
+                    <i className="fa fa-phone" aria-hidden="true" />
+                    (769) 208-4052
+                  </ListItemContent>
+                </ListItem>
               </List>
             </div>
           </Cell>

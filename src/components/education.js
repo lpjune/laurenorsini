@@ -9,7 +9,7 @@ class Education extends Component {
           <p>{this.props.startYear} - {this.props.endYear}</p>
         </Cell>
         <Cell col={8}>
-          <h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4>
+          <a href={this.props.link}><h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4></a>
           <p style={{marginTop:'0px'}}>{this.props.gpa}</p>
           <p style={{marginTop:'0px'}}>{this.props.honors}</p>
         </Cell>

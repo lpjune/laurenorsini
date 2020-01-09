@@ -60,6 +60,7 @@ class Resume extends Component {
             <Education
               startYear={2018}
               endYear={"Present"}
+              link="https://www.msstate.edu/"
               schoolName="Mississippi State University"
               gpa="3.64/4.0"
               honors="President's List"
@@ -70,6 +71,7 @@ class Resume extends Component {
             <Experience
               startYear={2018}
               endYear={"Present"}
+              link="http://impress.ece.msstate.edu/"
               jobName="Android Developer | IMPRESS Lab | MSU"
               jobDescription="Work in the IMPRESS (Information Processing and Sensing) Lab, an extension of the
               Center for Advanced Vehicular Systems, developing Android apps for various research
@@ -82,6 +84,7 @@ class Resume extends Component {
             <Experience
               startYear={"May 2019"}
               endYear={"August 2019"}
+              link="https://www.cspire.com/wireless/"
               jobName="Software Development Intern | C Spire"
               jobDescription="Worked in the Web Apps department at C Spire on the desktop and mobile websites.
               Used different front- and back-end technologies like AngularJS, JQuery, Java, Spring,
@@ -92,6 +95,7 @@ class Resume extends Component {
             <Experience
               startYear={2018}
               endYear={2019}
+              link="https://www.cse.msstate.edu/"
               jobName="Teaching Assistant | MSU"
               jobDescription="Graded various assignments for a Python programming course (Biomedical Programming)
               taken by upper-level biomechanical engineering students. Worked closely with the
