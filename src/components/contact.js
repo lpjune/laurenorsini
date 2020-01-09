@@ -26,7 +26,7 @@ class Contact extends Component {
 
                 <ListItem>
                   <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
+                    style={{ fontSize: "30px", fontFamily: "Anton", wordBreak: "break-word" }}
                   >
                     <i className="fa fa-envelope" aria-hidden="true" />
                     LaurenPOrsini@gmail.com
