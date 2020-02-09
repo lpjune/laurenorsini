@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-    Card,
-    CardTitle,
-    CardText,
-    CardActions,
-    Button,
-    CardMenu,
-    IconButton
-} from "react-mdl";
+import { Card, CardTitle, CardText, CardActions, Button } from "react-mdl";
 
 class ProjectCard extends Component {
     render() {
@@ -45,7 +37,11 @@ class ProjectCard extends Component {
                         </Button>
                     )}
                     {this.props.devpost && (
-                        <Button colored href={this.props.devpost} target="_blank">
+                        <Button
+                            colored
+                            href={this.props.devpost}
+                            target="_blank"
+                        >
                             Devpost
                         </Button>
                     )}
