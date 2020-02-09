@@ -1,4 +1,5 @@
 # Lauren Orsini Portfolio
 
 to deploy:
-gcloud app deploy app.yaml 
+npm run build
+gcloud app deploy 

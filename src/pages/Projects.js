@@ -4,14 +4,8 @@ import {
     Tab,
     Grid,
     Cell,
-    Card,
-    CardTitle,
-    CardText,
-    CardActions,
-    Button,
-    CardMenu,
-    IconButton
 } from "react-mdl";
+import ProjectCard from "../components/ProjectCard";
 
 class Projects extends Component {
     constructor(props) {
@@ -20,217 +14,79 @@ class Projects extends Component {
     }
 
     toggleCategories() {
+        // Web Tab
         if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid">
-                    {/* Project 1 */}
-                    <Card
-                        className="project-card"
-                        shadow={5}
-                        style={{ minWidth: "450", margin: "auto" }}
-                    >
-                        <CardTitle
-                            style={{
-                                color: "#fff",
-                                height: "176px",
-                                background:
-                                    "url(/images/enterprise-blockchain.png) center / cover"
-                            }}
-                        >
-                            Blockchain Transaction Manager
-                        </CardTitle>
-                        <CardText>
-                            A management dashboard to store transaction records
-                            in a blockchain using MongoDB, Express, PUG, etc.
-                        </CardText>
-                        <CardActions border>
-                            <Button
-                                colored
-                                href="https://github.com/lpjune/BlockTransaction"
-                                target="_blank"
-                            >
-                                GitHub
-                            </Button>
-                            <Button
-                                colored
-                                href="https://blocktransaction.herokuapp.com/catalog"
-                                target="_blank"
-                            >
-                                Live Demo
-                            </Button>
-                        </CardActions>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+                    {/* Web Project 1 */}
+                    <ProjectCard
+                        title="Blockchain Transaction Manager"
+                        titleColor="#fff"
+                        image="/images/enterprise-blockchain.png"
+                        text="A management dashboard to store transaction records
+                            in a blockchain using MongoDB, Express, PUG, etc."
+                        github="https://github.com/lpjune/BlockTransaction"
+                        demo="https://blocktransaction.herokuapp.com/catalog"
+                    />
 
-                    {/* Project 2 */}
-                    <Card
-                        className="project-card"
-                        shadow={5}
-                        style={{ minWidth: "450", margin: "auto" }}
-                    >
-                        <CardTitle
-                            style={{
-                                color: "black",
-                                height: "176px",
-                                background:
-                                    "url(/images/message.jpg) center / cover"
-                            }}
-                        >
-                            HandUp
-                        </CardTitle>
-                        <CardText>
-                            An chat webapp that allows users to ask anonymous
-                            questions in class. Best Use of Google Cloud at
-                            BullyHack 2020.
-                        </CardText>
-                        <CardActions border>
-                            <Button
-                                colored
-                                href="https://github.com/lpjune/bullyhack20"
-                                target="_blank"
-                            >
-                                GitHub
-                            </Button>
-                            <Button
-                                colored
-                                href="http://bullyhack20.herokuapp.com/login"
-                                target="_blank"
-                            >
-                                Live Demo
-                            </Button>
-                        </CardActions>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+                    {/* Web Project 2 */}
+                    <ProjectCard
+                        title="HandUp"
+                        titleColor="black"
+                        image="/images/message.jpg"
+                        text="A chat webapp that allows users to ask anonymous
+                        questions in class. Best Use of Google Cloud at
+                        BullyHack 2020."
+                        github="https://github.com/lpjune/bullyhack20"
+                        devpost="https://devpost.com/software/handup-t54vk1"
+                        demo="http://bullyhack20.herokuapp.com/login"
+                    />
 
-                    {/* Project 3 */}
-                    <Card
-                        className="project-card"
-                        shadow={5}
-                        style={{ minWidth: "450", margin: "auto" }}
-                    >
-                        <CardTitle
-                            style={{
-                                color: "#fff",
-                                height: "176px",
-                                background:
-                                    "url(/images/store.jpg) center / cover"
-                            }}
-                        >
-                            eCommerce Store
-                        </CardTitle>
-                        <CardText>
-                            An eCommerce web store using MongoDB, Express,
-                            Mongoose, and PUG
-                        </CardText>
-                        <CardActions border>
-                            <Button
-                                colored
-                                href="https://github.com/lpjune/eCommerce"
-                                target="_blank"
-                            >
-                                GitHub
-                            </Button>
-                            <Button
-                                colored
-                                href="https://dcsp.herokuapp.com/"
-                                target="_blank"
-                            >
-                                Live Demo
-                            </Button>
-                        </CardActions>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+                    {/* Web Project 3 */}
+
+                    <ProjectCard
+                        title="eCommerce Store"
+                        titleColor="#fff"
+                        image="/images/store.jpg"
+                        text="An eCommerce web store using MongoDB, Express,
+                        Mongoose, and PUG"
+                        github="https://github.com/lpjune/eCommerce"
+                        demo="https://dcsp.herokuapp.com/"
+                    />
                 </div>
             );
+
+        // Android Tab
         } else if (this.state.activeTab === 1) {
             return (
                 <div className="projects-grid">
-                    {/* Project 1 */}
-                    <Card
-                        className="project-card"
-                        shadow={5}
-                        style={{ minWidth: "450", margin: "auto" }}
-                    >
-                        <CardTitle
-                            style={{
-                                color: "#fff",
-                                height: "176px",
-                                background:
-                                    "url(/images/NEST.jpg) no-repeat center / contain"
-                            }}
-                        ></CardTitle>
-                        <CardText>
-                            An Android app written in Kotlin for the control of
-                            NEST drone housing. App acts as a client to send and
-                            receive messages from NEST server, and stream live
-                            camera feeds.
-                        </CardText>
-                        <CardActions border>
-                            <Button
-                                colored
-                                href="https://github.com/impress-msu/NestApp"
-                                target="_blank"
-                            >
-                                GitHub
-                            </Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>Live Demo</Button>
-                        </CardActions>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+                    {/* Android Project 1 */}
+                    <ProjectCard
+                        image="/images/NEST.jpg"
+                        text="An Android app written in Kotlin for the control of NEST
+                    drone housing. App acts as a client to send and receive
+                    messages from NEST server, and stream live camera feeds."
+                        github="https://github.com/impress-msu/NestApp"
+                    />
 
-                    {/* Project 2 */}
-                    <Card
-                        className="project-card"
-                        shadow={5}
-                        style={{ minWidth: "450", margin: "auto" }}
-                    >
-                        <CardTitle
-                            style={{
-                                color: "#fff",
-                                height: "176px",
-                                background:
-                                    "url(/images/woof.png) center / cover"
-                            }}
-                        >
-                            woofState
-                        </CardTitle>
-                        <CardText>
-                            An Android app to connect those short on time with
-                            animal shelters in need of help for quick
-                            volunteering via dog walking. Winner of HackGSU
-                            2019.
-                        </CardText>
-                        <CardActions border>
-                            <Button
-                                colored
-                                href="https://github.com/lpjune/woofState"
-                                target="_blank"
-                            >
-                                GitHub
-                            </Button>
-                            <Button
-                                colored
-                                href="https://devpost.com/software/hackgsu19"
-                                target="_blank"
-                            >
-                                Devpost
-                            </Button>
-                        </CardActions>
-                        <CardMenu style={{ color: "#fff" }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+                    {/* Android Project 2 */}
+
+                    <ProjectCard
+                        title="woofState"
+                        titleColor="#fff"
+                        image="/images/woof.png"
+                        text="An Android app to connect those short on time with
+                        animal shelters in need of help for quick
+                        volunteering via dog walking. Winner of HackGSU
+                        2019."
+                        github="https://github.com/lpjune/woofState"
+                        devpost="https://devpost.com/software/hackgsu19"
+                    />
+
                 </div>
             );
+
+        // Misc Tab
         } else if (this.state.activeTab === 2) {
             return (
                 <div>
