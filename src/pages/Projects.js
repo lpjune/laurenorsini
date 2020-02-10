@@ -78,6 +78,7 @@ class Projects extends Component {
                         2019."
                         github="https://github.com/lpjune/woofState"
                         devpost="https://devpost.com/software/hackgsu19"
+                        demoVideo="https://youtu.be/yVFf3YwZD0M"
                     />
                 </div>
             );
@@ -93,7 +94,7 @@ class Projects extends Component {
                         image="/images/snake.jpg"
                         text="A game of snake written in Kotlin."
                         github="https://github.com/lpjune/snake-kotlin"
-                        demoVideo="https://www.youtube.com/watch?v=_ycCf-zOXEs&list=PLkSMDFzL8t13AAgZpXDCbpO0MsQl9hWMl"
+                        demoVideo="https://youtu.be/_ycCf-zOXEs"
                     />
 
                 </div>
