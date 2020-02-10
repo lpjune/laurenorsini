@@ -50,6 +50,11 @@ class ProjectCard extends Component {
                             Live Demo
                         </Button>
                     )}
+                    {this.props.demoVideo && (
+                        <Button colored href={this.props.demoVideo} target="_blank">
+                            Video
+                        </Button>
+                    )}
                 </CardActions>
             </Card>
         );

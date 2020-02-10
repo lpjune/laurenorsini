@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-    Tabs,
-    Tab,
-    Grid,
-    Cell,
-} from "react-mdl";
+import { Tabs, Tab, Grid, Cell } from "react-mdl";
 import ProjectCard from "../components/ProjectCard";
 
 class Projects extends Component {
@@ -32,8 +27,8 @@ class Projects extends Component {
                     {/* Web Project 2 */}
                     <ProjectCard
                         title="HandUp"
-                        titleColor="black"
-                        image="/images/message.jpg"
+                        titleColor="#fff"
+                        image="/images/classroom.jpg"
                         text="A chat webapp that allows users to ask anonymous
                         questions in class. Best Use of Google Cloud at
                         BullyHack 2020."
@@ -56,13 +51,15 @@ class Projects extends Component {
                 </div>
             );
 
-        // Android Tab
+            // Android Tab
         } else if (this.state.activeTab === 1) {
             return (
                 <div className="projects-grid">
                     {/* Android Project 1 */}
                     <ProjectCard
-                        image="/images/NEST.jpg"
+                        title="NEST App"
+                        titleColor="#fff"
+                        image="/images/drone.jpg"
                         text="An Android app written in Kotlin for the control of NEST
                     drone housing. App acts as a client to send and receive
                     messages from NEST server, and stream live camera feeds."
@@ -74,7 +71,7 @@ class Projects extends Component {
                     <ProjectCard
                         title="woofState"
                         titleColor="#fff"
-                        image="/images/woof.png"
+                        image="/images/woof2.jpg"
                         text="An Android app to connect those short on time with
                         animal shelters in need of help for quick
                         volunteering via dog walking. Winner of HackGSU
@@ -82,15 +79,23 @@ class Projects extends Component {
                         github="https://github.com/lpjune/woofState"
                         devpost="https://devpost.com/software/hackgsu19"
                     />
-
                 </div>
             );
 
-        // Misc Tab
+            // Misc Tab
         } else if (this.state.activeTab === 2) {
             return (
-                <div>
-                    <h1>This is a miscellaneous section</h1>
+                <div className="projects-grid">
+                    {/* Misc Project 1 */}
+                    <ProjectCard
+                        title="Kotlin Snake"
+                        titleColor="#fff"
+                        image="/images/snake.jpg"
+                        text="A game of snake written in Kotlin."
+                        github="https://github.com/lpjune/snake-kotlin"
+                        demoVideo="https://www.youtube.com/watch?v=_ycCf-zOXEs&list=PLkSMDFzL8t13AAgZpXDCbpO0MsQl9hWMl"
+                    />
+
                 </div>
             );
         }

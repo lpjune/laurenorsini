@@ -16,7 +16,7 @@ class Education extends Component {
                             {this.props.schoolName}
                         </h4>
                     </a>
-                    <p style={{ marginTop: "0px" }}>{this.props.gpa}</p>
+                    <p style={{ marginTop: "0px", marginBottom: "0px" }}>{this.props.gpa}</p>
                     <p style={{ marginTop: "0px" }}>{this.props.honors}</p>
                 </Cell>
             </Grid>

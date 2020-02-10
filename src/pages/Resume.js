@@ -59,7 +59,7 @@ class Resume extends Component {
   
               <Education
                 startYear={2018}
-                endYear={"Present"}
+                endYear={2020}
                 link="https://www.msstate.edu/"
                 schoolName="Mississippi State University"
                 gpa="3.64/4.0"
