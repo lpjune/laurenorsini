@@ -64,6 +64,7 @@ class Projects extends Component {
                     drone housing. App acts as a client to send and receive
                     messages from NEST server, and stream live camera feeds."
                         github="https://github.com/impress-msu/NestApp"
+                        demoVideo="https://youtu.be/SJXtHFFfBgU"
                     />
 
                     {/* Android Project 2 */}
@@ -88,6 +89,17 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Misc Project 1 */}
+                    <ProjectCard
+                        title="NEST Server"
+                        titleColor="#fff"
+                        image="/images/server.jpg"
+                        text="A desktop server written in Python and JavaScript for the NEST
+                    drone housing. Sends and receives
+                    messages from the NEST App client, and streams live camera feeds via Flask."
+                        github="https://github.com/lpjune/NestServerV2"
+                        demoVideo="https://youtu.be/SJXtHFFfBgU"
+                    />
+                    {/* Misc Project 2 */}
                     <ProjectCard
                         title="Kotlin Snake"
                         titleColor="#fff"
