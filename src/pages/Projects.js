@@ -13,7 +13,18 @@ class Projects extends Component {
         if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid">
+
                     {/* Web Project 1 */}
+                    <ProjectCard
+                        title="Portfolio Site"
+                        titleColor="#fff"
+                        image="/images/desk.jpg"
+                        text="You're here! A software engineering portfolio made using ReactJS and hosted with Google Cloud App Engine."
+                        github="https://github.com/lpjune/laurenorsini"
+                        demo="https://laurenorsini.dev"
+                    />
+
+                    {/* Web Project 2 */}
                     <ProjectCard
                         title="Blockchain Transaction Manager"
                         titleColor="#fff"
@@ -24,7 +35,7 @@ class Projects extends Component {
                         demo="https://blocktransaction.herokuapp.com/catalog"
                     />
 
-                    {/* Web Project 2 */}
+                    {/* Web Project 3 */}
                     <ProjectCard
                         title="HandUp"
                         titleColor="#fff"
@@ -37,8 +48,7 @@ class Projects extends Component {
                         demo="http://bullyhack20.herokuapp.com/login"
                     />
 
-                    {/* Web Project 3 */}
-
+                    {/* Web Project 4 */}
                     <ProjectCard
                         title="eCommerce Store"
                         titleColor="#fff"
@@ -55,6 +65,7 @@ class Projects extends Component {
         } else if (this.state.activeTab === 1) {
             return (
                 <div className="projects-grid">
+
                     {/* Android Project 1 */}
                     <ProjectCard
                         title="NEST App"
@@ -68,7 +79,6 @@ class Projects extends Component {
                     />
 
                     {/* Android Project 2 */}
-
                     <ProjectCard
                         title="woofState"
                         titleColor="#fff"
@@ -88,6 +98,7 @@ class Projects extends Component {
         } else if (this.state.activeTab === 2) {
             return (
                 <div className="projects-grid">
+
                     {/* Misc Project 1 */}
                     <ProjectCard
                         title="NEST Server"
@@ -99,6 +110,7 @@ class Projects extends Component {
                         github="https://github.com/lpjune/NestServerV2"
                         demoVideo="https://youtu.be/SJXtHFFfBgU"
                     />
+                    
                     {/* Misc Project 2 */}
                     <ProjectCard
                         title="Kotlin Snake"
@@ -108,7 +120,6 @@ class Projects extends Component {
                         github="https://github.com/lpjune/snake-kotlin"
                         demoVideo="https://youtu.be/_ycCf-zOXEs"
                     />
-
                 </div>
             );
         }
