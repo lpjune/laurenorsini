@@ -59,7 +59,7 @@ class Resume extends Component {
   
               <Education
                 startYear={2018}
-                endYear={2020}
+                endYear={"August 2020"}
                 link="https://www.msstate.edu/"
                 schoolName="Mississippi State University"
                 gpa="3.64/4.0"
@@ -105,11 +105,11 @@ class Resume extends Component {
               <hr style={{ borderTop: "3px solid #c33764" }} />
               <h2>Skills</h2>
               <h4 style={{ marginBottom: "0px", marginTop: "6px"}}>Languages</h4>
-              <Skills skill="Java, Kotlin, Python, JavaScript, HTML/CSS" />
+              <Skills skill="JavaScript, Kotlin, Python, Java, HTML/CSS" />
               <h4 style={{ marginBottom: "0px", marginTop: "6px"}}>Frameworks / Libraries</h4>
-              <Skills skill=" Android Jetpack, jQuery, React, Angular, VueJS, Express, Bootstrap, SASS, PUG"/>
+              <Skills skill="React, Android, jQuery, Express, Bootstrap, SASS, PUG"/>
               <h4 style={{ marginBottom: "0px", marginTop: "6px"}}>Databases</h4>
-              <Skills skill="MongoDB, SQL, SQLite" />
+              <Skills skill="MongoDB, SQL" />
               <h4 style={{ marginBottom: "0px", marginTop: "6px"}}>Version Control</h4>
               <Skills skill="Git, GitHub, Accurev" />
             </Cell>

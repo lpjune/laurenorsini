@@ -26,21 +26,32 @@ class Projects extends Component {
 
                     {/* Web Project 2 */}
                     <ProjectCard
+                        title="SocialApe"
+                        titleColor="#fff"
+                        image="/images/social.jpg"
+                        text="A full-stack social media web app from React, Redux, and Firebase. Made following tutorial from 'Classsed'."
+                        frontend="https://github.com/lpjune/socialape-client"
+                        backend="https://github.com/lpjune/socialape-functions"
+                        demo="https://socialape-6c0b0.web.app/"
+                    />
+
+                    {/* Web Project 3 */}
+                    <ProjectCard
                         title="Blockchain Transaction Manager"
                         titleColor="#fff"
                         image="/images/enterprise-blockchain.png"
-                        text="A management dashboard to store transaction records
+                        text="A full-stack management dashboard to store transaction records
                             in a blockchain using MongoDB, Express, PUG, etc."
                         github="https://github.com/lpjune/BlockTransaction"
                         demo="https://blocktransaction.herokuapp.com/catalog"
                     />
 
-                    {/* Web Project 3 */}
+                    {/* Web Project 4 */}
                     <ProjectCard
                         title="HandUp"
                         titleColor="#fff"
                         image="/images/classroom.jpg"
-                        text="A chat webapp that allows users to ask anonymous
+                        text="A full-stack chat webapp that allows users to ask anonymous
                         questions in class. Best Use of Google Cloud at
                         BullyHack 2020."
                         github="https://github.com/lpjune/bullyhack20"
@@ -48,13 +59,13 @@ class Projects extends Component {
                         demo="http://bullyhack20.herokuapp.com/login"
                     />
 
-                    {/* Web Project 4 */}
+                    {/* Web Project 5 */}
                     <ProjectCard
                         title="eCommerce Store"
                         titleColor="#fff"
                         image="/images/store.jpg"
                         text="An eCommerce web store using MongoDB, Express,
-                        Mongoose, and PUG"
+                        Mongoose, and PUG."
                         github="https://github.com/lpjune/eCommerce"
                         demo="https://dcsp.herokuapp.com/"
                     />

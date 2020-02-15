@@ -27,6 +27,26 @@ class ProjectCard extends Component {
                             GitHub
                         </Button>
                     )}
+                    {this.props.frontend && (
+                        <Button
+                            colored
+                            href={this.props.frontend}
+                            target="_blank"
+                        >
+                            Frontend
+                        </Button>
+                        
+                    )}
+                    {this.props.backend && (
+                        <Button
+                            colored
+                            href={this.props.backend}
+                            target="_blank"
+                        >
+                            Backend
+                        </Button>
+                        
+                    )}
                     {this.props.codepen && (
                         <Button
                             colored
@@ -47,7 +67,7 @@ class ProjectCard extends Component {
                     )}
                     {this.props.demo && (
                         <Button colored href={this.props.demo} target="_blank">
-                            Live Demo
+                            Demo
                         </Button>
                     )}
                     {this.props.demoVideo && (

@@ -22,7 +22,7 @@ class Landing extends Component {
                             <hr />
 
                             <p>
-                                JavaScript | Kotlin | Android | React | NodeJS |
+                                JavaScript | React | Kotlin | Android | NodeJS |
                                 Express | MongoDB | SQL
                             </p>
 
