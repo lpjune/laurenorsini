@@ -13,27 +13,29 @@ import {
 const Skills = () => {
     return (
         <Container>
-            <Typography variant="h4" component="h4"></Typography>
+            <Typography variant="h4" component="h4">Skills</Typography>
 
             <Grid container spacing={4}>
                 <Grid item xs>
                     <Paper>
                         <Typography variant="h6" component="h6">
-                            Skills
+                            Front-End
                         </Typography>
                         <List>
-                            <Paper>
-                            <ListItemText primary="Languages" secondary="JavaScript, Python, Kotlin, CSS, HTML" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="Front-End" secondary="React, Redux, jQuery, MaterialUI, Bootstrap" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="Back-End" secondary="Node, Express, Spring, Flask, SQL, MongoDB, Google Firebase, REST APIs" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="More" secondary="Android, Git, Jira, Agile Development, UI/UX Design" />
-                            </Paper>
+                            <ListItemText
+                                primary="JavaScript"
+                                secondary="React + Redux, jQuery"
+                            />
+                            <ListItemText primary="HTML" secondary="Pug" />
+
+                            <ListItemText
+                                primary="CSS"
+                                secondary="MaterialUI, Bootstrap"
+                            />
+                            <ListItemText
+                                primary="UI/UX Design"
+                                secondary="Mocks, Wireframing, HCI"
+                            />
                         </List>
                     </Paper>
                 </Grid>
@@ -41,12 +43,22 @@ const Skills = () => {
                 <Grid item xs>
                     <Paper>
                         <Typography variant="h6" component="h6">
-                            Experience
+                            Back-End
                         </Typography>
                         <List>
-                            <Paper>
-                            <ListItemText primary="Software Engineer - Center for Advanced Vehicular Systems" secondary="2018 - Current" />
-                            </Paper>
+                            <ListItemText
+                                primary="Node.js"
+                                secondary="Express, Axios"
+                            />
+                            <ListItemText primary="Python" secondary="Flask" />
+                            <ListItemText
+                                primary="Databases"
+                                secondary="MySQL, MongoDB, Firestore"
+                            />
+                            <ListItemText
+                                primary="Cloud"
+                                secondary="Google Firebase, Heroku, REST"
+                            />
                         </List>
                     </Paper>
                 </Grid>
@@ -54,26 +66,28 @@ const Skills = () => {
                 <Grid item xs>
                     <Paper>
                         <Typography variant="h6" component="h6">
-                            Education & Awards
+                            Tools & More
                         </Typography>
                         <List>
-                            <Paper>
-                            <ListItemText primary="Mississippi State University - B.S. in Computer Science" secondary="August 2020" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="BullyHack 2020 Hackathon" secondary="Winner - Best Use of Cloud Services" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="HackGSU 2019 Hackathon" secondary="Winner - Overall & Best Use of Cloud Services" />
-                            </Paper>
-                            <Paper>
-                            <ListItemText primary="Organizations" secondary="Recruiting Chair for Council on Women in Computing (ACM-W), Member of Society of Women Engineers (SWE), Member of Women in Cybersecurity (WiCyS)" />
-                            </Paper>
+                            <ListItemText
+                                primary="Version Control"
+                                secondary="Git, GitHub, GitLab"
+                            />
+                            <ListItemText
+                                primary="Agile Methodology"
+                                secondary="Jira, Scrum, Kanban"
+                            />
+                            <ListItemText
+                                primary="Debugging"
+                                secondary="Chrome DevTools, ESLint, Postman"
+                            />
+                            <ListItemText
+                                primary="Documentation"
+                                secondary="JSDoc, Markdown"
+                            />
                         </List>
                     </Paper>
                 </Grid>
-
-                
             </Grid>
         </Container>
     );
