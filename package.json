@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "cra-template": "1.0.3",
     "fontsource-roboto": "^2.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-vertical-timeline-component": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
