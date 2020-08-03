@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Typography } from "@material-ui/core";
+import WorkIcon from "@material-ui/icons/Work";
+import SchoolIcon from '@material-ui/icons/School';
+import StarIcon from '@material-ui/icons/Star';
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -8,7 +11,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
     return (
-        <Container style={{background: "black"}}>
+        <Container>
             <Typography variant="h4" component="h4">
                 Experience & Education
             </Typography>
@@ -28,6 +31,7 @@ const Timeline = () => {
                         background: "rgb(33, 150, 243)",
                         color: "#fff",
                     }}
+                    icon={<WorkIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">
                         Software Engineer
@@ -43,12 +47,49 @@ const Timeline = () => {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
+                    className="vertical-timeline-element--education"
+                    date="2020"
+                    iconStyle={{
+                        background: "rgb(233, 30, 99)",
+                        color: "#fff",
+                    }}
+                    icon={<SchoolIcon />}
+                >
+                    <h3 className="vertical-timeline-element-title">
+                        Bachelor of Science in Computer Science
+                    </h3>
+                    <h4 className="vertical-timeline-element-subtitle">
+                        Mississippi State University
+                    </h4>
+                    <p>Clubs etc</p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="2020"
+                    iconStyle={{
+                        background: "rgb(33, 150, 243)",
+                        color: "#fff",
+                    }}
+                    icon={<StarIcon />}
+                >
+                    <h3 className="vertical-timeline-element-title">
+                        BullyHack Hackathon
+                    </h3>
+                    <h4 className="vertical-timeline-element-subtitle">
+                        Spring
+                    </h4>
+                    <p>
+                        Win blah
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date="2019"
                     iconStyle={{
                         background: "rgb(33, 150, 243)",
                         color: "#fff",
                     }}
+                    icon={<WorkIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">
                         Full-stack Web Intern
@@ -64,11 +105,31 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    date="2019"
+                    iconStyle={{
+                        background: "rgb(33, 150, 243)",
+                        color: "#fff",
+                    }}
+                    icon={<StarIcon />}
+                >
+                    <h3 className="vertical-timeline-element-title">
+                        HackGSU Hackathon
+                    </h3>
+                    <h4 className="vertical-timeline-element-subtitle">
+                        Spring
+                    </h4>
+                    <p>
+                        Win blah
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
                     date="2018 - 2019"
                     iconStyle={{
                         background: "rgb(33, 150, 243)",
                         color: "#fff",
                     }}
+                    icon={<WorkIcon />}
                 >
                     <h3 className="vertical-timeline-element-title">
                         Teaching Assistant
@@ -82,25 +143,7 @@ const Timeline = () => {
                         Class
                     </p>
                 </VerticalTimelineElement>
-                
-                
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{
-                        background: "rgb(233, 30, 99)",
-                        color: "#fff",
-                    }}
-                >
-                    <h3 className="vertical-timeline-element-title">
-                        Bachelor of Science in Interactive Digital Media Visual
-                        Imaging
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                        Bachelor Degree
-                    </h4>
-                    <p>Creative Direction, Visual Design</p>
-                </VerticalTimelineElement>
+
                 <VerticalTimelineElement
                     iconStyle={{
                         background: "rgb(16, 204, 82)",
