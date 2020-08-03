@@ -37,7 +37,7 @@ const Landing = () => {
                 src="/images/woman.png"
             />
             <img
-                src="/images/female-developer.jpg"
+                src="/images/undraw_proud_coder.svg"
                 className={classes.image}
                 alt="Lauren Orsini"
             />
