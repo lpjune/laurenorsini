@@ -36,7 +36,7 @@ const Nav = () => {
                 <Button color="inherit">Skills</Button>
                 <Button color="inherit">Experience</Button>
                 <Button color="inherit">Projects</Button>
-                <Button color="inherit">Contact</Button>
+                <Button color="inherit">Say hi!</Button>
             </Toolbar>
         </AppBar>
     );
