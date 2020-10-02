@@ -11,11 +11,12 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const useStyles = makeStyles((theme) => ({
+    ...theme.spreadThis,
     bar: {
-        color: "#264653",
+        color: "primary",
     },
     icons: {
-        color: "#e9c46a",
+        color: "secondary",
     },
     buttons: {},
 }));

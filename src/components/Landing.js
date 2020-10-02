@@ -31,13 +31,13 @@ const Landing = () => {
             <Typography className={classes.title} variant="h5" component="h5">
                 Web Developer
             </Typography>
-            <Avatar
+            {/* <Avatar
                 className={classes.avatar}
                 alt="Lauren Orsini"
                 src="/images/woman.png"
-            />
+            /> */}
             <img
-                src="/images/undraw_proud_coder.svg"
+                src="/images/undraw_programmer_imem.svg"
                 className={classes.image}
                 alt="Lauren Orsini"
             />
