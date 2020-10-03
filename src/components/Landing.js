@@ -2,12 +2,16 @@ import React from "react";
 import { Avatar, Container, Typography, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+    container: {
+        paddingTop: 10,
+        paddingBottom: 10,
+        // backgroundImage: "url('/images/undraw_programmer_imem.svg')",
+    },
     name: {
         textAlign: "center",
     },
     title: {
         textAlign: "center",
-        color: "blue",
     },
     avatar: {
         margin: "auto",
@@ -24,11 +28,11 @@ const useStyles = makeStyles((theme) => ({
 const Landing = () => {
     const classes = useStyles();
     return (
-        <Container>
+        <Container className={classes.container}>
             <Typography className={classes.name} variant="h2" component="h2">
                 Lauren Orsini
             </Typography>
-            <Typography className={classes.title} variant="h5" component="h5">
+            <Typography className={classes.title} variant="h4" component="h4">
                 Web Developer
             </Typography>
             {/* <Avatar
