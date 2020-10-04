@@ -20,15 +20,15 @@ const Timeline = () => {
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                        background: "rgb(33, 150, 243)",
-                        color: "#fff",
+                        background: "#F2F2F2",
+                        color: "#000",
                     }}
                     contentArrowStyle={{
-                        borderRight: "7px solid  rgb(33, 150, 243)",
+                        borderRight: "7px solid  #F2F2F2",
                     }}
                     date="2018 - present"
                     iconStyle={{
-                        background: "rgb(33, 150, 243)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<WorkIcon />}
@@ -48,9 +48,13 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
+                    contentStyle={{
+                        background: "#F2F2F2",
+                        color: "#000",
+                    }}
                     date="2020"
                     iconStyle={{
-                        background: "rgb(233, 30, 99)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<SchoolIcon />}
@@ -65,9 +69,13 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{
+                        background: "#F2F2F2",
+                        color: "#000",
+                    }}
                     date="2020"
                     iconStyle={{
-                        background: "rgb(33, 150, 243)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<StarIcon />}
@@ -84,9 +92,13 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{
+                        background: "#F2F2F2",
+                        color: "#000",
+                    }}
                     date="2019"
                     iconStyle={{
-                        background: "rgb(33, 150, 243)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<WorkIcon />}
@@ -105,9 +117,13 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{
+                        background: "#F2F2F2",
+                        color: "#000",
+                    }}
                     date="2019"
                     iconStyle={{
-                        background: "rgb(33, 150, 243)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<StarIcon />}
@@ -124,9 +140,13 @@ const Timeline = () => {
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{
+                        background: "#F2F2F2",
+                        color: "#000",
+                    }}
                     date="2018 - 2019"
                     iconStyle={{
-                        background: "rgb(33, 150, 243)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                     icon={<WorkIcon />}
@@ -146,7 +166,7 @@ const Timeline = () => {
 
                 <VerticalTimelineElement
                     iconStyle={{
-                        background: "rgb(16, 204, 82)",
+                        background: "#00BFA6",
                         color: "#fff",
                     }}
                 />

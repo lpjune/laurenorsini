@@ -8,16 +8,26 @@ import {
     ListSubheader,
     ListItem,
     ListItemText,
+    makeStyles,
 } from "@material-ui/core";
 
+const useStyles = makeStyles((theme) => ({
+    // ...theme.spreadThis,
+    paper: {
+        backgroundColor: "#F2F2F2",
+    }
+}));
+
 const Skills = () => {
+    const classes = useStyles();
+
     return (
         <Container>
             <Typography variant="h4" component="h4">Skills</Typography>
 
             <Grid container spacing={4}>
                 <Grid item xs>
-                    <Paper>
+                    <Paper className={classes.paper}>
                         <Typography variant="h6" component="h6">
                             Front-End
                         </Typography>
@@ -41,7 +51,7 @@ const Skills = () => {
                 </Grid>
 
                 <Grid item xs>
-                    <Paper>
+                    <Paper className={classes.paper}>
                         <Typography variant="h6" component="h6">
                             Back-End
                         </Typography>
@@ -64,7 +74,7 @@ const Skills = () => {
                 </Grid>
 
                 <Grid item xs>
-                    <Paper>
+                    <Paper className={classes.paper}>
                         <Typography variant="h6" component="h6">
                             Tools & More
                         </Typography>

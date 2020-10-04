@@ -16,7 +16,7 @@ const theme = createMuiTheme(themeFile);
 
 const useStyles = makeStyles((theme) => ({
     App: {
-        backgroundColor: "background",
+        backgroundColor: "#DADADA",
     },
 }));
 
