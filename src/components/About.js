@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Grid } from "@material-ui/core";
+import { Avatar, Container, Typography, Grid } from "@material-ui/core";
 import "../App.css";
 
 const About = () => {
@@ -25,11 +25,16 @@ const About = () => {
                         </div>
                     </Grid>
                     <Grid item xs={8}>
-                        <img
+                        {/* <img
                             className="about-image"
                             src="/images/undraw_programmer_imem.svg"
                             alt="Lauren Orsini"
-                        />
+                        /> */}
+                        <Avatar
+                            className="about-image"
+                            src="/images/female-developer.jpg"
+                            alt="Lauren Orsini"
+                        ></Avatar>
                     </Grid>
                 </Grid>
             </Container>
