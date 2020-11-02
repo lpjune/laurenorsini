@@ -1,22 +1,10 @@
 import React from "react";
-import { Container, Typography, makeStyles, Grid } from "@material-ui/core";
+import { Container, Typography, Grid } from "@material-ui/core";
 import ProjectCard from "./ProjectCard";
 
-const useStyles = makeStyles((theme) => ({
-    bar: {
-        color: "#264653",
-    },
-    icons: {
-        color: "#e9c46a",
-    },
-    buttons: {},
-    container: {
-        display: "flex",
-    },
-}));
+
 
 const Projects = () => {
-    const classes = useStyles();
 
     return (
         <Container>

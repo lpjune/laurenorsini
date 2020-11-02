@@ -1,7 +1,7 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import {
-    makeStyles,
-    Typography,
+    Link,
     AppBar,
     IconButton,
     Button,
@@ -10,29 +10,14 @@ import {
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-
-const useStyles = makeStyles((theme) => ({
-    // ...theme.spreadThis,
-    bar: {
-        color: "primary",
-    },
-    icons: {
-        color: "secondary",
-    },
-    links: {
-        textAlign: "center"
-    },
-    hi: {
-        textAlign: "right"
-    }
-}));
+import "../App.css";
 
 const Nav = () => {
-    const classes = useStyles();
 
     return (
-        <AppBar className={classes.bar} position="sticky">
+        <AppBar position="sticky" className="nav-root">
             <Toolbar>
+                {/* LINKS TO SOCIALS */}
                 <Grid
                     container
                     direction="row"
@@ -40,29 +25,100 @@ const Nav = () => {
                     alignItems="center"
                 >
                     <Grid item xs={2}>
-                        <IconButton
-                            edge="start"
+                        <Link
                             color="inherit"
-                            aria-label="menu"
+                            href="https://github.com/lpjune"
+                            target="_blank"
+                            rel="noopener"
                         >
-                            <GitHubIcon className={classes.icons} />
-                        </IconButton>
-                        <IconButton
-                            edge="start"
+                            <IconButton
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                            >
+                                <GitHubIcon />
+                            </IconButton>
+                        </Link>
+                        <Link
                             color="inherit"
-                            aria-label="menu"
+                            href="https://www.linkedin.com/in/laurenporsini/"
+                            target="_blank"
+                            rel="noopener"
                         >
-                            <LinkedInIcon className={classes.icons} />
-                        </IconButton>
+                            <IconButton
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                            >
+                                <LinkedInIcon />
+                            </IconButton>
+                        </Link>
                     </Grid>
-                    <Grid item xs={8} className={classes.links}>
-                        <Button color="inherit">About</Button>
-                        <Button color="inherit">Skills</Button>
-                        <Button color="inherit">Experience</Button>
-                        <Button color="inherit">Projects</Button>
+
+                    {/* SCROLL LINKS */}
+                    <Grid item xs={8} className="nav-links">
+                        <Button color="inherit">
+                            <ScrollLink
+                                activeClass="active"
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                About
+                            </ScrollLink>
+                        </Button>
+                        <Button color="inherit">
+                            <ScrollLink
+                                activeClass="active"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Skills
+                            </ScrollLink>
+                        </Button>
+                        <Button color="inherit">
+                            <ScrollLink
+                                activeClass="active"
+                                to="experience"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Experience
+                            </ScrollLink>
+                        </Button>
+                        <Button color="inherit">
+                            <ScrollLink
+                                activeClass="active"
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Projects
+                            </ScrollLink>
+                        </Button>
                     </Grid>
-                    <Grid item xs={2} className={classes.hi}>
-                        <Button color="inherit">Say hi!</Button>
+                    <Grid item xs={2} className="nav-hi">
+                        <Button color="inherit">
+                            <ScrollLink
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Say hi!
+                            </ScrollLink>
+                        </Button>
                     </Grid>
                 </Grid>
             </Toolbar>

@@ -1,22 +1,39 @@
 import React from "react";
-import { Container, Typography } from "@material-ui/core";
+import { Container, Typography, Grid } from "@material-ui/core";
+import "../App.css";
 
 const About = () => {
     return (
-        <Container>
-            <Typography variant="h4" component="h4">
-                Hi, I'm Lauren Orsini
-            </Typography>
-            <Typography variant="body1" component="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur arcu neque, pharetra a tristique lobortis, iaculis ac
-                tortor. Phasellus sed tincidunt nibh. Vivamus vel odio vel velit
-                ultricies pellentesque ac in elit. Nulla facilisi. Duis laoreet
-                tristique turpis ac vulputate. Etiam vel varius mauris. Integer
-                dapibus congue elit a dapibus. Nunc vel nisi et diam commodo
-                luctus.
-            </Typography>
-        </Container>
+        <div className="about-div">
+            <Container>
+                <Grid container space={2}>
+                    <Grid item xs={4}>
+                        <div className="about-text-container">
+                            <Typography
+                                className="about-title"
+                                variant="h4"
+                                component="h4"
+                            >
+                                About Me
+                            </Typography>
+                            <Typography variant="body1" component="p">
+                                A full stack web developer with experience in
+                                the internet industry and a B.S. in C.S. My
+                                current favorite tech stack includes ReactJS,
+                                GraphQL, & MySQL.
+                            </Typography>
+                        </div>
+                    </Grid>
+                    <Grid item xs={8}>
+                        <img
+                            className="about-image"
+                            src="/images/undraw_programmer_imem.svg"
+                            alt="Lauren Orsini"
+                        />
+                    </Grid>
+                </Grid>
+            </Container>
+        </div>
     );
 };
 

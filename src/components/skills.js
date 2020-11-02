@@ -5,29 +5,24 @@ import {
     Container,
     Typography,
     List,
-    ListSubheader,
-    ListItem,
     ListItemText,
-    makeStyles,
 } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-    // ...theme.spreadThis,
-    paper: {
-        backgroundColor: "#F2F2F2",
-    }
-}));
+import WebIcon from "@material-ui/icons/WebOutlined";
+import CloudIcon from "@material-ui/icons/CloudOutlined";
+import BuildIcon from "@material-ui/icons/BuildOutlined";
+import "../App.css";
 
 const Skills = () => {
-    const classes = useStyles();
-
     return (
-        <Container>
-            <Typography variant="h4" component="h4">Skills</Typography>
+        <Container className="skills-container">
+            <Typography variant="h4" component="h4">
+                Skills
+            </Typography>
 
             <Grid container spacing={4}>
                 <Grid item xs>
-                    <Paper className={classes.paper}>
+                    <Paper className="skills-paper">
+                        <WebIcon />
                         <Typography variant="h6" component="h6">
                             Front-End
                         </Typography>
@@ -35,6 +30,12 @@ const Skills = () => {
                             <ListItemText
                                 primary="JavaScript"
                                 secondary="React + Redux, jQuery"
+                                classes={
+                                    {
+                                        // primary: classes.primary,
+                                        // secondary: classes.secondary,
+                                    }
+                                }
                             />
                             <ListItemText primary="HTML" secondary="Pug" />
 
@@ -51,7 +52,8 @@ const Skills = () => {
                 </Grid>
 
                 <Grid item xs>
-                    <Paper className={classes.paper}>
+                    <Paper className="skills-paper">
+                        <CloudIcon />
                         <Typography variant="h6" component="h6">
                             Back-End
                         </Typography>
@@ -74,7 +76,8 @@ const Skills = () => {
                 </Grid>
 
                 <Grid item xs>
-                    <Paper className={classes.paper}>
+                    <Paper className="skills-paper">
+                        <BuildIcon />
                         <Typography variant="h6" component="h6">
                             Tools & More
                         </Typography>
