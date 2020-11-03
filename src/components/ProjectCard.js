@@ -6,15 +6,14 @@ import {
     CardActions,
     CardContent,
     CardMedia,
-    CardActionArea,
 } from "@material-ui/core";
-import "../App.css"
+import "../App.css";
 
 const ProjectCard = (props) => {
     const { title, text, imagePath, githubUrl } = props;
     return (
         <Card className="pc-card">
-            <CardActionArea>
+            <div>
                 <CardMedia
                     className="pc-media"
                     component="img"
@@ -33,17 +32,24 @@ const ProjectCard = (props) => {
                         {text}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
+            </div>
             <CardActions>
                 <Button
                     size="small"
-                    color="primary"
+                    className="pc-btn"
                     href={githubUrl}
                     target="_blank"
+                    variant="contained"
+                    disableElevation
                 >
                     GitHub
                 </Button>
-                <Button size="small" color="primary">
+                <Button
+                    size="small"
+                    className="pc-btn"
+                    variant="contained"
+                    disableElevation
+                >
                     Learn More
                 </Button>
             </CardActions>
