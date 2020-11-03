@@ -88,10 +88,20 @@ body {
 
 /* SKILLS */
 .skills-container {
-    padding-top: 20px;
+    padding: 3rem;
+}
+.skills-title {
+    padding-bottom: 1rem !important;
+    text-align: center;
 }
 .skills-paper {
-    background-color: #f2f2f2;
+    background-color: rgb(250, 250, 250) !important;
+    text-align: center;
+    padding-bottom: 1rem !important;
+}
+.skills-icon {
+    color: #4e4e4e !important;
+    padding-top: 1rem !important;
 }
 
 /* TIMELINE */

@@ -15,14 +15,14 @@ import "../App.css";
 const Skills = () => {
     return (
         <Container className="skills-container">
-            <Typography variant="h4" component="h4">
+            <Typography className="skills-title" variant="h4" component="h4">
                 Skills
             </Typography>
 
             <Grid container spacing={4}>
-                <Grid item xs>
+                <Grid item xs={12} sm={12} md={4}>
                     <Paper className="skills-paper">
-                        <WebIcon />
+                        <WebIcon className="skills-icon"/>
                         <Typography variant="h6" component="h6">
                             Front-End
                         </Typography>
@@ -30,12 +30,6 @@ const Skills = () => {
                             <ListItemText
                                 primary="JavaScript"
                                 secondary="React + Redux, jQuery"
-                                classes={
-                                    {
-                                        // primary: classes.primary,
-                                        // secondary: classes.secondary,
-                                    }
-                                }
                             />
                             <ListItemText primary="HTML" secondary="Pug" />
 
@@ -51,9 +45,9 @@ const Skills = () => {
                     </Paper>
                 </Grid>
 
-                <Grid item xs>
+                <Grid item xs={12} sm={12} md={4}>
                     <Paper className="skills-paper">
-                        <CloudIcon />
+                        <CloudIcon className="skills-icon"/>
                         <Typography variant="h6" component="h6">
                             Back-End
                         </Typography>
@@ -75,9 +69,9 @@ const Skills = () => {
                     </Paper>
                 </Grid>
 
-                <Grid item xs>
+                <Grid item xs={12} s={12} md={4}>
                     <Paper className="skills-paper">
-                        <BuildIcon />
+                        <BuildIcon className="skills-icon"/>
                         <Typography variant="h6" component="h6">
                             Tools & More
                         </Typography>
