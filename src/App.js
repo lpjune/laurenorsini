@@ -1,12 +1,5 @@
 import React from "react";
-import {
-    Link,
-    Element,
-    Events,
-    animateScroll as scroll,
-    scrollSpy,
-    scroller,
-} from "react-scroll";
+import { Element } from "react-scroll";
 import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import About from "./components/About";
@@ -16,30 +9,27 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import "./App.css";
 
-
-
 function App() {
-
     return (
-            <div>
-                <Nav />
-                <Landing />
-                <Element name="about">
-                    <About />
-                </Element>
-                <Element name="skills">
-                    <Skills />
-                </Element>
-                <Element name="experience">
-                    <Timeline />
-                </Element>
-                <Element name="projects">
-                    <Projects />
-                </Element>
-                <Element name="contact">
-                    <Contact />
-                </Element>
-            </div>
+        <div>
+            <Nav />
+            <Landing />
+            <Element name="about">
+                <About />
+            </Element>
+            <Element name="skills">
+                <Skills />
+            </Element>
+            <Element name="experience">
+                <Timeline />
+            </Element>
+            <Element name="projects">
+                <Projects />
+            </Element>
+            <Element name="contact">
+                <Contact />
+            </Element>
+        </div>
     );
 }
 

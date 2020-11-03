@@ -3,6 +3,8 @@ import { Container, Typography } from "@material-ui/core";
 import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
 import StarIcon from "@material-ui/icons/Star";
+// import ComputerIcon from "@material-ui/icons/Computer"
+// import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward"
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -14,7 +16,7 @@ const Timeline = () => {
     return (
         <Container className="timeline-container">
             <Typography className="timeline-title" variant="h4" component="h4">
-                Experience & Education
+                Experience
             </Typography>
 
             <VerticalTimeline>
@@ -23,8 +25,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     contentArrowStyle={{
                         borderRight: "7px solid  #F2F2F2",
@@ -59,8 +62,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     date="2020"
                     iconStyle={{
@@ -85,8 +89,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     date="2020"
                     iconStyle={{
@@ -118,8 +123,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     date="2019"
                     iconStyle={{
@@ -151,8 +157,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     date="2019"
                     iconStyle={{
@@ -184,8 +191,9 @@ const Timeline = () => {
                     contentStyle={{
                         background: "#FAFAFA",
                         color: "#000",
-                        boxShadow: "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
-                        borderRadius: "4px"
+                        boxShadow:
+                            "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+                        borderRadius: "4px",
                     }}
                     date="2018 - 2019"
                     iconStyle={{
@@ -213,12 +221,13 @@ const Timeline = () => {
                     </Typography>
                 </VerticalTimelineElement>
 
-                <VerticalTimelineElement
+                {/* <VerticalTimelineElement
                     iconStyle={{
                         background: "#f5f5f5",
                         color: "#4e4e4e",
                     }}
-                />
+                    icon={<StarIcon />}
+                /> */}
             </VerticalTimeline>
         </Container>
     );
