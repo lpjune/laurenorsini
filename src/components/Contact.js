@@ -1,13 +1,16 @@
 import React from "react";
 import { Container, Typography } from "@material-ui/core";
+import "../App.css";
 
 const Contact = () => {
     return (
-        <Container>
-            <Typography variant="h4" component="h4">
-                Contact
-            </Typography>
-        </Container>
+        <div className="contact-div">
+            <Container className="contact-container">
+                <Typography variant="h5" component="h5">
+                    Interested in working together? Let's chat!
+                </Typography>
+            </Container>
+        </div>
     );
 };
 
