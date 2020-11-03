@@ -105,3 +105,17 @@ body {
 }
 
 /* TIMELINE */
+.timeline-container {
+    padding: 3rem;
+}
+.timeline-title {
+    padding-bottom: 2rem !important;
+    text-align: center;
+}
+.timeline-organization {
+    margin: 0 !important;
+}
+.timeline-stack {
+    margin-top: 0.75rem !important;
+    font-weight: 450 !important;
+}

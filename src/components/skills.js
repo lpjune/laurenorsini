@@ -22,7 +22,7 @@ const Skills = () => {
             <Grid container spacing={4}>
                 <Grid item xs={12} sm={12} md={4}>
                     <Paper className="skills-paper">
-                        <WebIcon className="skills-icon"/>
+                        <WebIcon className="skills-icon" />
                         <Typography variant="h6" component="h6">
                             Front-End
                         </Typography>
@@ -47,7 +47,7 @@ const Skills = () => {
 
                 <Grid item xs={12} sm={12} md={4}>
                     <Paper className="skills-paper">
-                        <CloudIcon className="skills-icon"/>
+                        <CloudIcon className="skills-icon" />
                         <Typography variant="h6" component="h6">
                             Back-End
                         </Typography>
@@ -71,7 +71,7 @@ const Skills = () => {
 
                 <Grid item xs={12} s={12} md={4}>
                     <Paper className="skills-paper">
-                        <BuildIcon className="skills-icon"/>
+                        <BuildIcon className="skills-icon" />
                         <Typography variant="h6" component="h6">
                             Tools & More
                         </Typography>
