@@ -65,14 +65,12 @@ body {
     flex-direction: column;
 }
 .contact-email-icon {
-    padding: .75rem;
+    padding: 0.75rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem !important;
     border: 2px solid #4e4e4e;
     border-radius: 50%;
-
-
 }
 .contact-email-link {
     /* color: #4e4e4e !important; */
@@ -106,12 +104,17 @@ body {
 }
 
 /* NAV */
-.nav-root {
+.nav-root-top {
     background-color: #f5f5f5 !important;
     color: #4e4e4e !important;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2) !important;
-    /* border-bottom: 1px solid rgba(0,0,0,0.08) !important;
-    box-shadow: none !important; */
+    box-shadow: none !important;
+    border: none !important;
+}
+.nav-root-scroll {
+    background-color: #f5f5f5f3 !important;
+    color: #4e4e4e !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    box-shadow: none !important;
 }
 .nav-links {
     text-align: center;
@@ -120,8 +123,8 @@ body {
     text-align: end;
 }
 .nav-icon-links {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 /* PROJECTS */

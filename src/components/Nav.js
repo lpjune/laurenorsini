@@ -7,14 +7,23 @@ import {
     Button,
     Toolbar,
     Grid,
+    useScrollTrigger,
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../App.css";
 
 const Nav = () => {
+    const trigger = useScrollTrigger({
+        disableHysteresis: true,
+        threshold: 0
+    });
+
     return (
-        <AppBar position="sticky" className="nav-root">
+        <AppBar
+            position="sticky"
+            className={trigger ? "nav-root-scroll" : "nav-root-top"}
+        >
             <Toolbar>
                 {/* LINKS TO SOCIALS */}
                 <Grid
