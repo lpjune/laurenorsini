@@ -13,7 +13,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../App.css";
 
 const Nav = () => {
-
     return (
         <AppBar position="sticky" className="nav-root">
             <Toolbar>
@@ -24,8 +23,9 @@ const Nav = () => {
                     justify="space-between"
                     alignItems="center"
                 >
-                    <Grid item xs={2}>
+                    <Grid item xs={3} s={3} md={2}>
                         <Link
+                            className="nav-icon-links"
                             color="inherit"
                             href="https://github.com/lpjune"
                             target="_blank"
@@ -40,6 +40,7 @@ const Nav = () => {
                             </IconButton>
                         </Link>
                         <Link
+                            className="nav-icon-links"
                             color="inherit"
                             href="https://www.linkedin.com/in/laurenporsini/"
                             target="_blank"
@@ -56,7 +57,7 @@ const Nav = () => {
                     </Grid>
 
                     {/* SCROLL LINKS */}
-                    <Grid item xs={8} className="nav-links">
+                    <Grid item xs={6} s={6} md={8} className="nav-links">
                         <Button color="inherit">
                             <ScrollLink
                                 activeClass="active"
@@ -106,7 +107,7 @@ const Nav = () => {
                             </ScrollLink>
                         </Button>
                     </Grid>
-                    <Grid item xs={2} className="nav-hi">
+                    <Grid item xs={3} s={3} md={2} className="nav-hi">
                         <Button color="inherit">
                             <ScrollLink
                                 activeClass="active"

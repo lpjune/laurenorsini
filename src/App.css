@@ -119,6 +119,10 @@ body {
 .nav-hi {
     text-align: end;
 }
+.nav-icon-links {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
 
 /* PROJECTS */
 .projects-container {
