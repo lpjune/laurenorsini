@@ -19,13 +19,13 @@ const About = () => {
                         internet industry and a B.S. in C.S. My current favorite
                         tech stack includes ReactJS, GraphQL, & MySQL.
                     </Typography>
-                    <Button className="about-btn" variant="contained">
+                    <Button href="Lauren_Orsini_Resume.pdf" download className="about-btn" variant="contained">
                         Download Resume
                     </Button>
                 </div>
                 <Avatar
                     className="about-image"
-                    src="/images/female-developer.jpg"
+                    src="/images/woman.png"
                     alt="Lauren Orsini"
                 ></Avatar>
             </Container>
