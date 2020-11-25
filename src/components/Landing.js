@@ -22,12 +22,6 @@ const Landing = () => {
                     loop
                 />
             </Typography>
-
-            {/* <img
-                className="landing-image"
-                src="/images/undraw_programmer_imem.svg"
-                alt="Lauren Orsini"
-            /> */}
         </Container>
     );
 };
