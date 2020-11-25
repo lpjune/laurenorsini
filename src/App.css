@@ -164,6 +164,9 @@ body {
     padding-bottom: 1rem !important;
     text-align: center;
 }
+.skills-section-title {
+    color: #4e4e4e !important;
+}
 .skills-paper {
     background-color: rgb(250, 250, 250) !important;
     text-align: center;
