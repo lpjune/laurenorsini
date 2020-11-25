@@ -44,14 +44,14 @@ const ProjectCard = (props) => {
                 >
                     GitHub
                 </Button>
-                <Button
+                {/* <Button
                     size="small"
                     className="pc-btn"
                     variant="contained"
                     disableElevation
                 >
-                    Learn More
-                </Button>
+                    Demo
+                </Button> */}
             </CardActions>
         </Card>
     );
