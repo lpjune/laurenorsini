@@ -10,7 +10,7 @@ import {
 import "../App.css";
 
 const ProjectCard = (props) => {
-    const { title, text, imagePath, githubUrl } = props;
+    const { title, text, imagePath, githubUrl, demoUrl } = props;
     return (
         <Card className="pc-card">
             <div>
@@ -44,14 +44,16 @@ const ProjectCard = (props) => {
                 >
                     GitHub
                 </Button>
-                {/* <Button
+                {demoUrl && <Button
                     size="small"
                     className="pc-btn"
+                    href={demoUrl}
+                    target="_blank"
                     variant="contained"
                     disableElevation
                 >
                     Demo
-                </Button> */}
+                </Button>}
             </CardActions>
         </Card>
     );

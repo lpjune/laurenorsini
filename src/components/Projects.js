@@ -32,12 +32,27 @@ const Projects = () => {
                     md={4}
                 >
                     <ProjectCard
+                        title="Chat Clone"
+                        text="A full-stack messenger clone built with React, GraphQL + Apollo, and MySQL. Deployed using AWS EC2 and RDS."
+                        imagePath="/images/social.jpg"
+                        githubUrl="https://github.com/lpjune/chat-clone"
+                        demoUrl="http://ec2-3-83-25-119.compute-1.amazonaws.com"
+                    />
+                </Grid>
+                {/* <Grid
+                    className="projects-grid-item"
+                    item
+                    xs={12}
+                    sm={12}
+                    md={4}
+                >
+                    <ProjectCard
                         title="SocialApe"
                         text="A full-stack social media web app from React, Redux, and Firebase. Made following tutorial from 'Classsed'."
                         imagePath="/images/social.jpg"
                         githubUrl="https://github.com/lpjune/socialape-client"
                     />
-                </Grid>
+                </Grid> */}
                 <Grid
                     className="projects-grid-item"
                     item
